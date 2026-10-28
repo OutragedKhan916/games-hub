@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IEEE Jeopardy</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page">
+ <div class="wrap wide">
+
+  <div class="card" id="start" style="max-width:560px;margin:auto">
+    <h1 class="glow">IEEE JEOPARDY</h1>
+    <p class="sub">Pick <b>8 tiles</b> from the board. Each clue's points <b>burn down</b> while you think. Right answer = points, wrong answer = half the tile value off.</p>
+    <label for="pName">YOUR NAME</label>
+    <input id="pName" maxlength="20" placeholder="e.g. Ahmed" autocomplete="off">
+    <label for="pId">YOUR ID</label>
+    <input id="pId" maxlength="20" placeholder="e.g. your username / IEEE ID" autocomplete="off">
+    <div class="err" id="err"></div>
+    <button class="big" id="go" style="margin-top:0">START GAME</button>
+  </div>
+
+  <div class="card hide" id="play">
+    <div class="top"><span class="pill" id="qn"></span><span class="pill" id="who"></span><span class="pill">Total: <b id="tot">0</b></span></div>
+
+    <div id="boardView">
+      <div class="prompt" id="hint"></div>
+      <div class="jb" id="board"></div>
+    </div>
+
+    <div id="clueView" class="hide">
+      <div class="score"><span id="pts">0</span><small>POINTS AVAILABLE</small></div>
+      <div class="bar"><i id="fill"></i></div>
+      <div class="clue"><small id="cname"></small><span id="ctext"></span></div>
+      <div class="opts" id="opts"></div>
+      <div class="fb" id="fb"></div>
+      <button class="big hide" id="next">NEXT</button>
+    </div>
+  </div>
+
+  <div class="card hide" id="end" style="max-width:560px;margin:auto">
+    <h1 class="glow">GAME OVER</h1>
+    <div class="final glow" id="fin"></div>
+    <div class="rank" id="rank"></div>
+    <h3>LEADERBOARD (this device)</h3>
+    <div class="lb" id="lb"></div>
+    <button class="big" id="again">PLAY AGAIN</button>
+  </div>
+
+ </div>
+ <a class="back" href="index.html">← All games</a>
+ <footer>Made by outragedkhan916</footer>
+</div>
+<script src="jeopardy-data.js"></script>
+<script src="jeopardy.js"></script>
+</body>
+</html>
