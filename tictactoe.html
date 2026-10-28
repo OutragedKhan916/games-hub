@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tic Tac Toe vs AI</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page">
+  <div class="wrap"><div class="card">
+    <h1 class="glow">TIC TAC TOE</h1>
+    <div class="lvls">
+      <button class="lvl normal" data-l="normal">Normal</button>
+      <button class="lvl hard" data-l="hard">Hard</button>
+      <button class="lvl extreme" data-l="extreme">Extreme</button>
+    </div>
+    <p class="sub" id="desc"></p>
+    <div class="top">
+      <span class="pill g">Wins <b id="w">0</b></span>
+      <span class="pill">Draws <b id="d">0</b></span>
+      <span class="pill r">Losses <b id="l">0</b></span>
+    </div>
+    <div class="status" id="status"></div>
+    <div class="ttt" id="grid"></div>
+    <button class="big hide" id="again">PLAY AGAIN</button>
+  </div></div>
+  <a class="back" href="index.html">← All games</a>
+  <footer>Made by outragedkhan916</footer>
+</div>
+<script src="ai.js"></script>
+<script src="tictactoe.js"></script>
+</body>
+</html>

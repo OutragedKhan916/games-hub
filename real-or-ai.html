@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Real or AI?</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page">
+ <div class="wrap">
+
+  <div class="card" id="start">
+    <h1 class="glow">REAL or AI?</h1>
+    <p class="sub">7 photos. Is it real or AI? Each round starts at <b>1000 pts</b> and the clock burns them down.</p>
+    <label for="pName">YOUR NAME</label>
+    <input id="pName" maxlength="20" placeholder="e.g. Ahmed" autocomplete="off">
+    <label for="pId">YOUR ID</label>
+    <input id="pId" maxlength="20" placeholder="e.g. your username / game ID" autocomplete="off">
+    <div class="err" id="err"></div>
+    <button class="big" id="go" style="margin-top:0">START GAME</button>
+  </div>
+
+  <div class="card hide" id="game">
+    <div class="top"><span class="pill" id="qn"></span><span class="pill" id="who"></span><span class="pill">Total: <b id="tot">0</b></span></div>
+    <div class="score"><span id="pts">1000</span><small>POINTS THIS ROUND</small></div>
+    <div class="bar"><i id="fill"></i></div>
+    <div class="prompt">Is this photo REAL or AI?</div>
+    <div class="photo" id="photo"></div>
+    <div class="btns"><button class="ch real" id="bReal">REAL</button><button class="ch ai" id="bAi">AI</button></div>
+    <div class="fb" id="fb"></div>
+    <button class="big hide" id="next">NEXT</button>
+  </div>
+
+  <div class="card hide" id="end">
+    <h1 class="glow">GAME OVER</h1>
+    <div class="final glow" id="fin"></div>
+    <div class="rank" id="rank"></div>
+    <h3>LEADERBOARD (this device)</h3>
+    <div class="lb" id="lb"></div>
+    <button class="big" id="again">PLAY AGAIN</button>
+  </div>
+
+ </div>
+ <a class="back" href="index.html">← All games</a>
+ <footer>Made by outragedkhan916</footer>
+</div>
+<script src="data.js"></script>
+<script src="real-or-ai.js"></script>
+</body>
+</html>
